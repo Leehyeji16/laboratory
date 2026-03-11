@@ -6,42 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>laboratory</title>
 
-    <link rel="stylesheet" href="http://localhost:3002/dist/aos.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css">
-
 </head>
 
 <body>
+
+    <!-- 로딩 인트로 -->
+    <div id="loader">
+        <div class="loader-logo"><img src="images/log.png" alt=""></div>
+    </div>
+
+    <!-- 커스텀 커서 -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
     <!-- Header -->
     <header class="header">
         <div class="nav-container">
+            <button class="hamburger" id="hamburger" aria-label="메뉴">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <div class="logo"><img src="images/log.png" alt=""></div>
             <nav>
                 <ul class="nav-menu">
+                    <li><a href="#story">OUR STORY</a></li>
                     <li><a href="#rd">R&D</a></li>
                     <li><a href="#brand">BRAND</a></li>
                     <li><a href="#news">NEWS</a></li>
-                    <li><a href="#about">ABOUT US</a></li>
-                    <li><a href="#business">BUSINESS</a></li>                   
+                    <li><a href="#about">OUR TEAM</a></li>
                     <li><a href="#contact">CONTACT US</a></li>
                 </ul>
             </nav>
-            <div class="search-icon">🔍</div>
+            <div class="search-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="7" />
+                    <line x1="16.5" y1="16.5" x2="22" y2="22" />
+                </svg>
+            </div>
         </div>
     </header>
+
+    <!-- 모바일 메뉴 -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav">
+            <li><a href="#story">OUR STORY</a></li>
+            <li><a href="#rd">R&D</a></li>
+            <li><a href="#brand">BRAND</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#about">OUR TEAM</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="molecular-bg"></div>
         <div class="hero-content">
-            <div class="hero-subtitle">INFINITE POTENTIAL WAITING FOR YOU</div>
-            <h1 class="hero-title">INNOVATION</h1>
-            <p class="hero-description">혁신을 통해 더 나은 미래를 만들어가는 것이 우리의 목표입니다. 끊임없는 연구개발과 창의적 사고로 새로운 가치를 창조합니다.</p>
+            <div class="hero-subtitle" data-aos="fade-down" data-aos-delay="200">INFINITE POTENTIAL WAITING FOR YOU
+            </div>
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="400">INNOVATION</h1>
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="600">혁신을 통해 더 나은 미래를 만들어가는 것이 우리의 목표입니다. 끊임없는
+                연구개발과 창의적 사고로 새로운 가치를 창조합니다.</p>
         </div>
         <div class="business-hand">
             <svg width="200" height="200" viewBox="0 0 200 200">
@@ -50,53 +85,165 @@
                 <circle cx="100" cy="100" r="40" fill="rgba(255,255,255,0.3)" />
             </svg>
         </div>
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="900">
+            <span>SCROLL</span>
+            <div class="scroll-line"></div>
+        </div>
     </section>
 
     <!-- Our Story Section -->
-    <section class="story-section">
+    <section class="story-section" id="story">
         <div class="container">
-            <h2 class="section-title">OUR STORY</h2>
-            <p class="section-description">우리의 이야기를 통해 어떻게 혁신적인 기업이 되었는지, 그리고 앞으로 어떤 비전을 가지고 있는지 알아보세요.</p>
+            <div class="section-heading" data-aos="fade-right">
+                <span class="en-title">OUR STORY</span>
+            </div>
+            <p class="section-description" data-aos="fade-right" data-aos-delay="100">우리의 이야기를 통해 어떻게 혁신적인 기업이 되었는지,
+                <br>그리고 앞으로 어떤 비전을 가지고 있는지 알아보세요.
+            </p>
 
-            <div class="story-content">
+            <div class="story-content" data-aos="fade-up" data-aos-delay="200">
                 <div class="story-image">
                     <div class="team-hands"></div>
                     <div class="play-button"></div>
                 </div>
                 <div class="story-text">
                     <h3>우리의 여정</h3>
-                    <p>지난 수년간 우리는 끊임없는 도전과 혁신을 통해 성장해왔습니다. 고객의 needs를 파악하고 이를 해결하기 위한 창의적인 솔루션을 제공하는 것이 우리의 핵심
-                        가치입니다.</p>
+                    <p>지난 수년간 우리는 끊임없는 도전과 혁신을 통해 성장해왔습니다. 고객의 needs를 파악하고 이를 해결하기 위한 창의적인 솔루션을 제공하는 것이 우리의 핵심 가치입니다.
+                    </p>
                     <p>팀워크와 협력을 바탕으로 한 우리의 문화는 모든 구성원이 자신의 역량을 최대한 발휘할 수 있는 환경을 제공합니다.</p>
                     <a href="#" class="read-more">더 자세히 보기</a>
+                    <div class="story-stats">
+                        <div class="stat-item">
+                            <span class="count-num" data-target="15">0</span><span class="stat-unit">년</span>
+                            <p>연구개발 경력</p>
+                        </div>
+                        <div class="stat-item">
+                            <span class="count-num" data-target="200">0</span><span class="stat-unit">+</span>
+                            <p>보유 특허</p>
+                        </div>
+                        <div class="stat-item">
+                            <span class="count-num" data-target="50">0</span><span class="stat-unit">개국</span>
+                            <p>글로벌 파트너</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-heading" data-aos="fade-up">
+                <div class="stats-heading" data-aos="fade-up">
+                    <span class="stats-label">INNOVATION</span>
+                    <h2 class="stats-title">멈추지 않는 성장의 증거</h2>
+                    <p class="stats-desc">끊임없는 도전과 연구로 쌓아온 HONEST의 성과입니다.</p>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stats-item" data-aos="fade-up" data-aos-delay="0">
+                    <span class="stats-num" data-target="15">0</span><span class="stats-unit">년</span>
+                    <p>연구개발 경력</p>
+                </div>
+                <div class="stats-item" data-aos="fade-up" data-aos-delay="100">
+                    <span class="stats-num" data-target="200">0</span><span class="stats-unit">+</span>
+                    <p>보유 특허</p>
+                </div>
+                <div class="stats-item" data-aos="fade-up" data-aos-delay="200">
+                    <span class="stats-num" data-target="50">0</span><span class="stats-unit">개국</span>
+                    <p>글로벌 파트너</p>
+                </div>
+                <div class="stats-item" data-aos="fade-up" data-aos-delay="300">
+                    <span class="stats-num" data-target="300">0</span><span class="stats-unit">+</span>
+                    <p>제품 라인업</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 성장 곡선 -->
+        <div class="curve-wrap">
+            <svg class="curve-svg" viewBox="-50 0 1540 380" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="fillGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:rgba(252,107,58,0.12)" />
+                        <stop offset="100%" style="stop-color:rgba(252,107,58,0)" />
+                    </linearGradient>
+                    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:rgba(180,180,255,0.1)" />
+                        <stop offset="50%" style="stop-color:rgba(200,210,255,0.45)" />
+                        <stop offset="100%" style="stop-color:rgba(252,107,58,0.9)" />
+                    </linearGradient>
+                </defs>
+
+                <!-- 채움 영역 -->
+                <path
+                    d="M0,360 C150,355 300,320 500,280 C700,240 900,160 1100,90 C1250,40 1380,15 1500,10 L1500,380 L0,380 Z"
+                    fill="url(#fillGradient)" />
+
+                <!-- 메인 곡선 -->
+                <path id="curve-path"
+                    d="M0,360 C150,355 300,320 500,280 C700,240 900,160 1100,90 C1250,40 1380,15 1500,10" fill="none"
+                    stroke="url(#lineGradient)" stroke-width="2" />
+            </svg>
+            <div id="curve-dot-el"></div>
         </div>
     </section>
 
     <!-- R&D Section -->
     <section class="rd-section" id="rd">
         <div class="container">
-            <div class="rd-header">
-                <h2 class="rd-title">R&D</h2>
-                <p class="rd-description">우리의 연구개발 부문에서는 미래를 선도하는 기술을 개발합니다. 바이오 기술부터 첨단 소재까지, 다양한 분야에서 혁신적인 연구를
-                    진행하고 있습니다.</p>
-            </div>
-
-            <div class="rd-tabs">
-                <button class="tab-btn active">바이오 소재 기술</button>
-                <button class="tab-btn">스마트 포장재</button>
-                <button class="tab-btn">친환경 제형 기술</button>
-                <button class="tab-btn">지속가능한 원료 기술</button>
-                <button class="tab-btn">IoT 기술</button>
-            </div>
-
-            <div class="rd-visual">
-                <div class="dna-background"></div>
-                <div class="navigation-arrows">
-                    <div class="arrow-btn">‹</div>
-                    <div class="arrow-btn">›</div>
+            <div class="rd-header" data-aos="fade-right">
+                <div class="section-heading">
+                    <span class="en-title">R&amp;D</span>
                 </div>
+                <p class="rd-description">우리의 연구개발 부문에서는 미래를 선도하는 기술을 개발합니다.
+                    <br>바이오 기술부터 첨단 소재까지, 다양한 분야에서 혁신적인 연구를 진행하고
+                    있습니다.
+                </p>
+            </div>
+
+            <div class="rd-tabs" data-aos="fade-up" data-aos-delay="100">
+                <button class="tab-btn active" data-tab="0">바이오 소재 기술</button>
+                <button class="tab-btn" data-tab="2">친환경 제형 기술</button>
+                <button class="tab-btn" data-tab="3">지속가능한 원료 기술</button>
+                <button class="tab-btn" data-tab="4">IoT 기술</button>
+            </div>
+
+            <div class="rd-panels" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="rd-panel active rd-visual">
+                    <div class="dna-background rd-bg-1"></div>
+                    <div class="rd-panel-text">
+                        <h4>바이오 소재 기술</h4>
+                        <p>자연에서 영감을 받은 바이오 기반 소재를 개발하여 기존 합성 물질을 대체합니다. 피부 친화성과 생분해성을 동시에 구현한 차세대 소재 연구를 선도하고 있습니다.</p>
+                    </div>
+                </div>
+
+                <div class="rd-panel rd-visual">
+                    <div class="dna-background rd-bg-3"></div>
+                    <div class="rd-panel-text">
+                        <h4>친환경 제형 기술</h4>
+                        <p>유해 성분을 배제하고 자연 유래 원료만을 활용한 고기능성 제형을 개발합니다. 환경 부하를 최소화하면서도 성능은 극대화하는 그린 포뮬레이션 기술입니다.</p>
+                    </div>
+                </div>
+
+                <div class="rd-panel rd-visual">
+                    <div class="dna-background rd-bg-4"></div>
+                    <div class="rd-panel-text">
+                        <h4>지속가능한 원료 기술</h4>
+                        <p>지속 가능한 방식으로 수급된 천연 원료를 활용합니다. 공정무역, 재생 농업 기반 원료 소싱을 통해 환경과 지역사회 모두에 긍정적인 영향을 미칩니다.</p>
+                    </div>
+                </div>
+
+                <div class="rd-panel rd-visual">
+                    <div class="dna-background rd-bg-5"></div>
+                    <div class="rd-panel-text">
+                        <h4>IoT 기술</h4>
+                        <p>사물인터넷 기술을 제품 및 생산 공정에 융합하여 스마트 팩토리를 구현합니다. 실시간 데이터 수집과 AI 분석을 통해 품질과 효율을 동시에 향상시킵니다.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -104,12 +251,38 @@
     <!-- Brand Section -->
     <section class="brand-section" id="brand">
         <div class="container">
-            <h2 class="brand-title">BRAND</h2>
-            <div class="brand-grid">
-                <div class="brand-item"><img src="images/br1.png" alt=""></div>
-                <div class="brand-item"><img src="images/br2.png" alt=""></div>
-                <div class="brand-item"><img src="images/br3.png" alt=""></div>
-                <div class="brand-item"><img src="images/br4.png" alt=""></div>
+            <div class="section-heading" data-aos="fade-right">
+                <span class="en-title">BRAND</span>
+            </div>
+            <div class="brand-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="brand-item">
+                    <img src="images/br1.png" alt="브랜드1">
+                    <div class="brand-overlay">
+                        <span class="brand-name">BRAND 01</span>
+                        <span class="brand-desc">바이오 스킨케어</span>
+                    </div>
+                </div>
+                <div class="brand-item">
+                    <img src="images/br2.png" alt="브랜드2">
+                    <div class="brand-overlay">
+                        <span class="brand-name">BRAND 02</span>
+                        <span class="brand-desc">친환경 헤어케어</span>
+                    </div>
+                </div>
+                <div class="brand-item">
+                    <img src="images/br3.png" alt="브랜드3">
+                    <div class="brand-overlay">
+                        <span class="brand-name">BRAND 03</span>
+                        <span class="brand-desc">기능성 뷰티</span>
+                    </div>
+                </div>
+                <div class="brand-item">
+                    <img src="images/br4.png" alt="브랜드4">
+                    <div class="brand-overlay">
+                        <span class="brand-name">BRAND 04</span>
+                        <span class="brand-desc">웰니스 솔루션</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -117,85 +290,173 @@
     <!-- News Section -->
     <section class="news-section" id="news">
         <div class="container">
-            <div class="news-header">
-                <h2 class="news-title">HONEST</h2>
-                <span class="news-subtitle">News</span>
+            <div class="news-header" data-aos="fade-right">
+                <div class="section-heading">
+                    <span class="en-title">NEWS</span>
+                </div>
             </div>
 
-            <div class="news-grid">
-                <div class="news-main">
-                    <article class="news-item">
-                        <div class="news-image"><img src="images/ne1.png" alt=""></div>
-                        <div class="news-content">
-                            <div class="news-date">2025.09.15</div>
-                            <h3>[보도자료] HONEST, 친환경 솔루션 부문 '올해의 혁신기업' 수상</h3>
-                            <p class="news-excerpt">지속가능한 기술 개발과 환경 보호에 대한 노력을 인정받아 업계에서 주목받는 혁신기업으로 선정되었습니다.</p>
+            <div class="news-magazine" data-aos="fade-up" data-aos-delay="100">
+
+                <!-- 메인 기사 -->
+                <article class="news-main-card">
+                    <div class="news-main-image">
+                        <img src="images/ne1.jpg" alt="">
+                        <div class="news-main-overlay">
+                            <div class="news-main-content">
+                                <div class="news-date">2025.09.15</div>
+                                <h2>HONEST, 친환경 솔루션 부문 '올해의 혁신기업' 수상</h2>
+                                <p class="news-excerpt">지속가능한 기술 개발과 환경 보호에 대한 노력을 인정받아 업계에서 주목받는 혁신기업으로 선정되었습니다.</p>
+                                <a href="#" class="news-read-more">자세히 보기 →</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 사이드 기사 목록 -->
+                <div class="news-side">
+                    <article class="news-side-item">
+                        <div class="news-side-image"><img src="images/ne2.jpg" alt=""></div>
+                        <div class="news-side-content">
+                            <h4>신제품 출시 소식 및 글로벌 시장 진출 계획</h4>
+                            <p>새로운 바이오 기반 제품군을 선보이며, 아시아 및 유럽 시장으로의 확장을 본격화합니다.</p>
+                            <div class="news-date">2025.09.10</div>
                         </div>
                     </article>
 
-                    <article class="news-item">
-                        <div class="news-image"></div>
-                        <div class="news-content">
-                            <div class="news-date">2025.09.10</div>
-                            <h3>신제품 출시 소식 및 글로벌 시장 진출 계획</h3>
-                            <p class="news-excerpt">새로운 바이오 기반 제품군을 선보이며, 아시아 및 유럽 시장으로의 확장을 본격화합니다.</p>
+                    <article class="news-side-item">
+                        <div class="news-side-image"><img src="images/ne3.jpg" alt=""></div>
+                        <div class="news-side-content">
+                            <h4>지속 가능한 패키징 솔루션 기술 개발 성공</h4>
+                            <p>차세대 친환경 패키징 기술로 글로벌 시장에서 주목받고 있습니다.</p>
+                            <div class="news-date">2024.03.08</div>
+                        </div>
+                    </article>
+
+                    <article class="news-side-item">
+                        <div class="news-side-image"><img src="images/ne4.jpg" alt=""></div>
+                        <div class="news-side-content">
+                            <h4>국제 환경 인증 ISO 14001 획득</h4>
+                            <p>엄격한 국제 기준을 충족하며 친환경 경영 체계를 공식 인증받았습니다.</p>
+                            <div class="news-date">2024.03.05</div>
+                        </div>
+                    </article>
+
+                    <article class="news-side-item">
+                        <div class="news-side-image"><img src="images/ne5.jpg" alt=""></div>
+                        <div class="news-side-content">
+                            <h4>R&D 센터 확장 및 연구진 충원 소식</h4>
+                            <p>연구 역량 강화를 위해 R&D 센터를 확장하고 우수 연구인력을 확보했습니다.</p>
+                            <div class="news-date">2024.03.01</div>
                         </div>
                     </article>
                 </div>
 
-                <div class="news-sidebar">
-                    <article class="news-small">
-                        <div class="news-small-content">
-                            <h4>[보도자료] 지속 가능한 패키징 솔루션 기술 개발 성공</h4>
-                            <div class="news-small-date">2024.03.08</div>
-                        </div>
-                    </article>
+            </div>
+        </div>
+    </section>
 
-                    <article class="news-small">
-                        <div class="news-small-content">
-                            <h4>[보도자료] 국제 환경 인증 ISO 14001 획득</h4>
-                            <div class="news-small-date">2024.03.05</div>
-                        </div>
-                    </article>
-
-                    <article class="news-small">
-                        <div class="news-small-content">
-                            <h4>[보도자료] R&D 센터 확장 및 연구진 충원 소식</h4>
-                            <div class="news-small-date">2024.03.01</div>
-                        </div>
-                    </article>
-
-                    <article class="news-small">
-                        <div class="news-small-content">
-                            <h4>[보도자료] 대학교 산학협력 프로그램 체결</h4>
-                            <div class="news-small-date">2024.02.28</div>
-                        </div>
-                    </article>
+    <!-- Team Section -->
+    <section class="team-section" id="about">
+        <div class="container">
+            <div class="section-heading" data-aos="fade-right">
+                <span class="en-title">OUR TEAM</span>
+            </div>
+            <div class="team-grid">
+                <div class="team-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="team-photo"><img src="images/tem1.jpg" alt=""></div>
+                    <div class="team-info">
+                        <h4 class="team-name">바이오 소재 연구팀장</h4>
+                        <p class="team-role">Bio Material Lead</p>
+                        <p class="team-desc">서울대 화학공학 박사. 바이오 기반 소재 연구 15년 경력.</p>
+                    </div>
+                </div>
+                <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-photo"><img src="images/tem2.jpg" alt=""></div>
+                    <div class="team-info">
+                        <h4 class="team-name">친환경 제형 연구팀장</h4>
+                        <p class="team-role">Green Formulation Lead</p>
+                        <p class="team-desc">KAIST 생명공학 박사. 친환경 포뮬레이션 특허 30건 보유.</p>
+                    </div>
+                </div>
+                <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-photo"><img src="images/tem3.jpg" alt=""></div>
+                    <div class="team-info">
+                        <h4 class="team-name">IoT 융합 연구팀장</h4>
+                        <p class="team-role">IoT Convergence Lead</p>
+                        <p class="team-desc">포항공대 전자공학 박사. 스마트 팩토리 시스템 설계 전문.</p>
+                    </div>
+                </div>
+                <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-photo"><img src="images/tem4.jpg" alt=""></div>
+                    <div class="team-info">
+                        <h4 class="team-name">지속가능성 연구팀장</h4>
+                        <p class="team-role">Sustainability Lead</p>
+                        <p class="team-desc">연세대 환경공학 박사. ESG 경영 전략 및 인증 전문가.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Awards Marquee -->
+    <section class="marquee-section">
+        <div class="marquee-track">
+            <div class="marquee-inner">
+                <span class="marquee-item">🏆 올해의 혁신기업</span>
+                <span class="marquee-divider">·</span>
+                <span class="marquee-item">ISO 14001 인증</span>
+                <span class="marquee-divider">·</span>
+                <span class="marquee-item">🌿 친환경 기술 대상</span>
+                <span class="marquee-divider">·</span>
+                <span class="marquee-item">특허청 우수 발명상</span>
+                <span class="marquee-divider">·</span>
+                <span class="marquee-item">🔬 바이오 이노베이션 어워드</span>
+                <span class="marquee-divider">·</span>
+                <span class="marquee-item">ISO 9001 인증</span>
+                <span class="marquee-divider">·</span>
+                <span class="marquee-item">🌍 글로벌 그린 어워드</span>
+                <span class="marquee-divider">·</span>
+                <span class="marquee-item">산업통상자원부 장관상</span>
+                <span class="marquee-divider">·</span>
+                <span class="marquee-item">🏆 올해의 혁신기업</span>
+                <span class="marquee-divider">·</span>
+                <span class="marquee-item">ISO 14001 인증</span>
+                <span class="marquee-divider">·</span>
+                <span class="marquee-item">🌿 친환경 기술 대상</span>
+                <span class="marquee-divider">·</span>
+                <span class="marquee-item">특허청 우수 발명상</span>
+                <span class="marquee-divider">·</span>
+                <span class="marquee-item">🔬 바이오 이노베이션 어워드</span>
+                <span class="marquee-divider">·</span>
+                <span class="marquee-item">ISO 9001 인증</span>
+                <span class="marquee-divider">·</span>
+                <span class="marquee-item">🌍 글로벌 그린 어워드</span>
+                <span class="marquee-divider">·</span>
+                <span class="marquee-item">산업통상자원부 장관상</span>
+                <span class="marquee-divider">·</span>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
         <div class="centerbox">
+            <div class="footer-divider"></div>
             <div class="left">
                 <h1><img src="images/footerlog.png" alt=""></h1>
                 <address class="footer-info">
                     <p>본사: 경상북도 경산시 삼성로 27 (삼풍동) 경북테크노파크 본부동 512A</p>
                     <p>기업 부설 연구소: 대구광역시 동구 매여로 10길</p>
-                    <p>이메일:korea@honest.co.kr</p>
-                    <p>대표번호:1600-6940</p>
+                    <p>이메일: korea@honest.co.kr</p>
+                    <p>대표번호: 1600-6940</p>
                 </address>
-
                 <p class="copyright">Copyright © 2024 Honest Co., Ltd., All Rights Reserved.</p>
             </div>
-
             <div class="right">
                 <p class="footer-cta">
                     <span class="label">CONTACT US</span>
                     <span class="label2">히어스트의 맞춤형 솔루션과 함께하세요</span>
                 </p>
-
                 <nav class="footer-links" aria-label="정책 링크">
                     <a href="#">쿠키정책</a>
                     <a href="#">개인정보처리방침</a>
@@ -204,43 +465,141 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
-        // Tab functionality for R&D section
-        const tabBtns = document.querySelectorAll('.tab-btn');
-        tabBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                tabBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-            });
+        AOS.init({ duration: 800, once: true, offset: 80 });
+
+        /* ── 로딩 인트로 ── */
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            loader.classList.add('hide');
+            setTimeout(() => loader.remove(), 800);
         });
 
-        // Smooth scrolling for navigation
+        /* ── 커스텀 커서 ── */
+        const dot = document.querySelector('.cursor-dot');
+        const outline = document.querySelector('.cursor-outline');
+        let mouseX = 0, mouseY = 0, outX = 0, outY = 0;
+
+        window.addEventListener('mousemove', e => {
+            mouseX = e.clientX; mouseY = e.clientY;
+            dot.style.transform = `translate(${mouseX}px,${mouseY}px)`;
+        });
+
+        (function animateCursor() {
+            outX += (mouseX - outX) * 0.12;
+            outY += (mouseY - outY) * 0.12;
+            outline.style.transform = `translate(${outX}px,${outY}px)`;
+            requestAnimationFrame(animateCursor);
+        })();
+
+        document.querySelectorAll('a, button, .brand-item, .arrow-btn').forEach(el => {
+            el.addEventListener('mouseenter', () => outline.classList.add('hovered'));
+            el.addEventListener('mouseleave', () => outline.classList.remove('hovered'));
+        });
+
+        /* ── 패럴랙스 ── */
+        const hero = document.querySelector('.hero');
+        window.addEventListener('scroll', () => {
+            hero.style.backgroundPositionY = `calc(50% + ${window.scrollY * 0.4}px)`;
+        }, { passive: true });
+
+        /* ── 숫자 카운팅 ── */
+        const counters = document.querySelectorAll('.count-num, .stats-num');
+        const countObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                const el = entry.target;
+                const target = +el.dataset.target;
+                const step = Math.ceil(target / 60);
+                let current = 0;
+                const timer = setInterval(() => {
+                    current += step;
+                    if (current >= target) { el.textContent = target; clearInterval(timer); }
+                    else el.textContent = current;
+                }, 25);
+                countObserver.unobserve(el);
+            });
+        }, { threshold: 0.5 });
+        counters.forEach(c => countObserver.observe(c));
+
+        /* ── R&D 탭 + 패널 연동 ── */
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const panels = document.querySelectorAll('.rd-panel');
+        let currentTab = 0;
+
+        function showTab(idx) {
+            tabBtns.forEach(b => b.classList.remove('active'));
+            panels.forEach(p => p.classList.remove('active'));
+            currentTab = (idx + panels.length) % panels.length;
+            tabBtns[currentTab].classList.add('active');
+            panels[currentTab].classList.add('active');
+        }
+
+        tabBtns.forEach((btn, i) => btn.addEventListener('click', () => showTab(i)));
+        document.querySelectorAll('.next-btn').forEach(btn =>
+            btn.addEventListener('click', () => showTab(currentTab + 1)));
+        document.querySelectorAll('.prev-btn').forEach(btn =>
+            btn.addEventListener('click', () => showTab(currentTab - 1)));
+
+        /* ── 스무스 스크롤 ── */
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
         });
 
-        // Play button functionality
+        /* ── 헤더 스크롤 효과 ── */
+        window.addEventListener('scroll', () => {
+            document.querySelector('.header').classList.toggle('scrolled', window.scrollY > 50);
+        }, { passive: true });
+
+        /* ── 플레이 버튼 ── */
         document.querySelector('.play-button').addEventListener('click', function () {
             alert('비디오 재생 기능은 실제 구현 시 추가됩니다.');
         });
 
-        // Arrow navigation for R&D section
-        const arrowBtns = document.querySelectorAll('.arrow-btn');
-        arrowBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                console.log('Navigation clicked');
+        /* ── 성장 곡선 dot 애니메이션 ── */
+        const curvePath = document.getElementById('curve-path');
+        const curveDotEl = document.getElementById('curve-dot-el');
+        const curveLength = curvePath.getTotalLength();
+        let curveProgress = 0;
+
+        function animateDot() {
+            curveProgress = (curveProgress + 0.25) % 100;
+            const point = curvePath.getPointAtLength((curveProgress / 100) * curveLength);
+            const svg = curvePath.ownerSVGElement;
+            const rect = svg.getBoundingClientRect();
+            const svgW = svg.viewBox.baseVal.width;
+            const svgH = svg.viewBox.baseVal.height;
+            const x = (point.x - (-50)) / svgW * rect.width;
+            const y = point.y / svgH * rect.height;
+            curveDotEl.style.left = x + 'px';
+            curveDotEl.style.top = y + 'px';
+            requestAnimationFrame(animateDot);
+        }
+        animateDot();
+
+        /* ── 햄버거 메뉴 ── */
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            mobileMenu.classList.toggle('open');
+        });
+
+        // 메뉴 클릭 시 닫기
+        document.querySelectorAll('.mobile-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('open');
+                mobileMenu.classList.remove('open');
             });
         });
     </script>
+
 </body>
 
 </html>
