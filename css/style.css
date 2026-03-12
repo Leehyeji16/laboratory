@@ -413,6 +413,8 @@ footer .centerbox .left .footer-info p {
     font-weight: normal;
     font-size: 12px;          /* Caption 2 */
     line-height: 1.4;
+        font-style: normal;
+
 }
 
 footer .centerbox .left .copyright {

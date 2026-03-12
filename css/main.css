@@ -68,10 +68,13 @@ body {
     transition: all 0.3s ease;
     transform-origin: center;
 }
+
 .header.scrolled .hamburger span {
     color: #fff;
-    background: #fff; /* span은 background로 색상 적용 */
+    background: #fff;
+    /* span은 background로 색상 적용 */
 }
+
 /* 열렸을 때 X 모양 */
 .hamburger.open span:nth-child(1) {
     transform: translateY(6.5px) rotate(45deg);
@@ -1127,6 +1130,11 @@ footer .centerbox .right .footer-links a:hover {
         font-size: 48px;
     }
 
+    .section-description {
+        margin-top: -15px;
+        margin-bottom: 24px;
+    }
+
     .rd-panel-text {
         left: 20px;
         right: 20px;
@@ -1140,6 +1148,11 @@ footer .centerbox .right .footer-links a:hover {
 
     .story-text h3 {
         font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .story-text {
+        padding: 0px 5px;
     }
 
     .stats-grid {
@@ -1159,6 +1172,22 @@ footer .centerbox .right .footer-links a:hover {
         border-bottom: none;
     }
 
+    .brand-section {
+        padding-bottom: 0;
+    }
+
+    news-main-image {
+        margin-top: -100px;
+    }
+
+    .rd-header {
+        margin-bottom: 50px;
+    }
+
+    .news-header {
+        margin-bottom: 15px;
+    }
+
     .news-main-card {
         height: 320px;
     }
@@ -1173,6 +1202,10 @@ footer .centerbox .right .footer-links a:hover {
 
     .news-side-content h4 {
         font-size: 16px;
+    }
+
+    .section-heading .en-title {
+        margin-bottom: -20px;
     }
 
     footer .centerbox {
@@ -1213,9 +1246,8 @@ footer .centerbox .right .footer-links a:hover {
     }
 
     .tab-btn {
-        font-size: 13px;
+        font-size: 14px;
         padding: 6px 14px;
-        border: 1px solid #ddd;
         border-radius: 20px;
         white-space: nowrap;
     }
