@@ -3,7 +3,6 @@
 @import url(reset.css);
 @import url(font.css);
 
-/* ━━━ 폰트 전역 ━━━ */
 body {
     font-family: 'Pretendard', sans-serif;
     font-size: 16px;
@@ -11,7 +10,6 @@ body {
     color: #333;
 }
 
-/* ━━━ 섹션 타이틀 한/영 조합 ━━━ */
 .section-heading {
     margin-bottom: 20px;
 }
@@ -19,22 +17,18 @@ body {
 .section-heading .en-title {
     font-family: 'Pretendard', sans-serif;
     font-size: 48px;
-    /* Display 5 */
     font-weight: 800;
     letter-spacing: -0.02em;
     line-height: 1.3;
-    /* 130% */
     display: block;
 }
 
 .section-heading .ko-sub {
     font-family: 'Pretendard', sans-serif;
     font-size: 13px;
-    /* Caption 1 */
     font-weight: 400;
     letter-spacing: 0.15em;
     line-height: 1.4;
-    /* 140% */
     color: #505050;
     margin-top: 8px;
     display: block;
@@ -72,7 +66,6 @@ body {
 .header.scrolled .hamburger span {
     color: #fff;
     background: #fff;
-    /* span은 background로 색상 적용 */
 }
 
 /* 열렸을 때 X 모양 */
@@ -137,28 +130,22 @@ body {
 .hero-title {
     font-family: 'Pretendard', sans-serif;
     font-size: 80px;
-    /* Display 1 */
     font-weight: 800;
     letter-spacing: -0.02em;
     line-height: 1.1;
-    /* 110% */
 }
 
 .hero-subtitle {
     font-size: 17px;
-    /* Caption 1 */
     font-weight: 400;
     letter-spacing: 0.25em;
     line-height: 1.4;
-    /* 140% */
 }
 
 .hero-description {
     font-size: 20px;
-    /* Body 1 */
     font-weight: 300;
     line-height: 1.6;
-    /* 160% */
 }
 
 /* ━━━ Section 공통 타이틀 ━━━ */
@@ -174,34 +161,27 @@ body {
 .section-description,
 .rd-description {
     font-size: 16px;
-    /* Body 1 */
     font-weight: 400;
     color: #505050;
     line-height: 1.6;
-    /* 160% */
 }
 
 /* ━━━ Story ━━━ */
 .story-text h3 {
     font-size: 32px;
-    /* Headline 1 */
     font-weight: 700;
     letter-spacing: -0.02em;
     line-height: 1.4;
-    /* 140% */
 }
 
 .story-text p {
     font-size: 15px;
-    /* Body 2 */
     font-weight: 400;
     line-height: 1.6;
-    /* 160% */
 }
 
 .read-more {
     font-size: 14px;
-    /* Body 3 */
     font-weight: 600;
     letter-spacing: 0.05em;
 }
@@ -226,35 +206,28 @@ body {
 .count-num {
     font-family: 'Pretendard', sans-serif;
     font-size: 48px;
-    /* Display 5 */
     font-weight: 800;
     color: #FC6B3A;
     line-height: 1.3;
-    /* 130% */
 }
 
 .stat-unit {
     font-family: 'Pretendard', sans-serif;
     font-size: 20px;
-    /* Title 1 */
     font-weight: 700;
     color: #FC6B3A;
     line-height: 1.5;
-    /* 150% */
 }
 
 .stat-item p {
     font-size: 12px;
-    /* Caption 2 */
     font-weight: 400;
     color: #767676;
     margin-top: 6px;
     letter-spacing: 0.08em;
     line-height: 1.4;
-    /* 140% */
 }
 
-/* ━━━ 로딩 인트로 ━━━ */
 #loader {
     position: fixed;
     inset: 0;
@@ -392,15 +365,14 @@ body {
     }
 }
 
+
 /* ━━━ R&D 탭 ━━━ */
 .tab-btn {
     font-family: 'Pretendard', sans-serif;
     font-size: 18px;
-    /* Title 2 */
     font-weight: 500;
     color: #999;
     line-height: 1.5;
-    /* 150% */
 }
 
 .tab-btn.active {
@@ -457,20 +429,16 @@ body {
 .rd-panel-text h4 {
     font-family: 'Pretendard', sans-serif;
     font-size: 24px;
-    /* Headline 3 */
     font-weight: 700;
     letter-spacing: -0.01em;
     line-height: 1.4;
-    /* 140% */
     margin-bottom: 12px;
 }
 
 .rd-panel-text p {
     font-size: 14px;
-    /* Body 3 */
     font-weight: 400;
     line-height: 1.5;
-    /* 150% */
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -524,21 +492,17 @@ body {
 .brand-overlay .brand-name {
     font-family: 'Pretendard', sans-serif;
     font-size: 18px;
-    /* Title 2 */
     font-weight: 700;
     letter-spacing: 0.05em;
     line-height: 1.5;
-    /* 150% */
     color: #fff;
     margin-bottom: 6px;
 }
 
 .brand-overlay .brand-desc {
     font-size: 13px;
-    /* Caption 1 */
     font-weight: 400;
     line-height: 1.4;
-    /* 140% */
     color: rgba(252, 107, 58, 0.9);
     letter-spacing: 0.05em;
 }
@@ -555,7 +519,6 @@ body {
 /* ━━━ News ━━━ */
 .news-content h3 {
     font-size: 20px;
-    /* Title 1 */
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: -0.01em;
@@ -563,7 +526,6 @@ body {
 
 .news-date {
     font-size: 12px;
-    /* Caption 2 */
     font-weight: 400;
     line-height: 1.4;
     color: #999;
@@ -571,7 +533,6 @@ body {
 
 .news-excerpt {
     font-size: 14px;
-    /* Body 3 */
     font-weight: 400;
     color: #777;
     line-height: 1.5;
@@ -586,7 +547,6 @@ body {
 
 .news-small-date {
     font-size: 12px;
-    /* Caption 2 */
     color: #999;
 }
 
@@ -595,8 +555,6 @@ body {
     background: #0A1628;
     padding: 80px 0;
     position: relative;
-    /* 기존에 없으면 추가 */
-
 }
 
 
@@ -671,7 +629,6 @@ body {
 .stats-num {
     font-family: 'Pretendard', sans-serif;
     font-size: 60px;
-    /* Display 6(40)보다 크게 유지 — 임팩트용 */
     font-weight: 800;
     color: #FC6B3A;
     line-height: 1.1;
@@ -680,7 +637,6 @@ body {
 .stats-unit {
     font-family: 'Pretendard', sans-serif;
     font-size: 20px;
-    /* Title 1 */
     font-weight: 700;
     color: #FC6B3A;
     line-height: 1.5;
@@ -688,7 +644,6 @@ body {
 
 .stats-item p {
     font-size: 12px;
-    /* Caption 2 */
     font-weight: 400;
     color: #999;
     margin-top: 10px;
@@ -744,33 +699,27 @@ body {
 .team-name {
     font-family: 'Pretendard', sans-serif;
     font-size: 18px;
-    /* Title 2 */
     font-weight: 700;
     letter-spacing: -0.01em;
     line-height: 1.5;
-    /* 150% */
     margin-bottom: 6px;
     word-break: keep-all;
 }
 
 .team-role {
     font-size: 13px;
-    /* Caption 1 */
     font-weight: 500;
     color: #505050;
     letter-spacing: 0.05em;
     line-height: 1.4;
-    /* 140% */
     margin-bottom: 10px;
 }
 
 .team-desc {
     font-size: 14px;
-    /* Body 3 */
     font-weight: 400;
     color: #767676;
     line-height: 1.5;
-    /* 150% */
 }
 
 /* ━━━ Awards Marquee ━━━ */
@@ -801,7 +750,6 @@ body {
 .marquee-item {
     font-family: 'Pretendard', sans-serif;
     font-size: 14px;
-    /* Title 2 */
     font-weight: 600;
     color: rgba(255, 255, 255, 0.7);
     letter-spacing: 0.05em;
@@ -858,7 +806,6 @@ footer .centerbox .right .footer-cta {
 footer .centerbox .right .footer-cta .label {
     font-family: 'Pretendard', sans-serif;
     font-size: 18px;
-    /* Title 2 */
     font-weight: 700;
     letter-spacing: 0.1em;
     line-height: 1.5;
@@ -867,7 +814,6 @@ footer .centerbox .right .footer-cta .label {
 
 footer .centerbox .right .footer-cta .label2 {
     font-size: 12px;
-    /* Caption 2 */
     line-height: 1.4;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -880,7 +826,6 @@ footer .centerbox .right .footer-links {
 footer .centerbox .right .footer-links a {
     color: rgba(255, 255, 255, 0.5);
     font-size: 12px;
-    /* Caption 2 */
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -944,27 +889,22 @@ footer .centerbox .right .footer-links a:hover {
 
 .news-main-content h2 {
     font-size: 28px;
-    /* Headline 2 */
     font-weight: 700;
     color: #fff;
     line-height: 1.4;
-    /* 140% */
     letter-spacing: -0.01em;
     margin: 10px 0 12px;
 }
 
 .news-main-content .news-excerpt {
     font-size: 14px;
-    /* Body 3 */
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.5;
-    /* 150% */
     margin-bottom: 20px;
 }
 
 .news-main-content .news-date {
     font-size: 12px;
-    /* Caption 2 */
     color: rgba(255, 255, 255, 0.5);
     line-height: 1.4;
     margin-bottom: 0;
@@ -973,7 +913,6 @@ footer .centerbox .right .footer-links a:hover {
 .news-read-more {
     display: inline-block;
     font-size: 13px;
-    /* Caption 1 */
     font-weight: 600;
     color: #FC6B3A;
     text-decoration: none;
@@ -1040,10 +979,8 @@ footer .centerbox .right .footer-links a:hover {
 
 .news-side-content h4 {
     font-size: 20px;
-    /* Title 1 */
     font-weight: 700;
     line-height: 1.5;
-    /* 150% */
     letter-spacing: -0.01em;
     color: #333;
     margin: 8px 0 6px;
@@ -1052,16 +989,13 @@ footer .centerbox .right .footer-links a:hover {
 
 .news-side-content p {
     font-size: 14px;
-    /* Body 3 */
     color: #767676;
     line-height: 1.5;
-    /* 150% */
     margin-bottom: 8px;
 }
 
 .news-side-content .news-date {
     font-size: 12px;
-    /* Caption 2 */
     color: #999;
     line-height: 1.4;
 }
